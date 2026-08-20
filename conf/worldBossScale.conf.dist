@@ -1,0 +1,66 @@
+[worldserver]
+#
+#    WorldBossScale.Enable
+#        Description: Scale outdoor world bosses from designed raid size down to MinPlayers.
+#        Default:     1
+#
+
+WorldBossScale.Enable = 1
+
+#
+#    WorldBossScale.Announce
+#        Description: Verbose catalog dump on world load / reload.
+#        Default:     0
+#
+
+WorldBossScale.Announce = 0
+
+#
+#    WorldBossScale.MinPlayers
+#        Description: Floor for the live threat-list player count. 1–4 still fight this size.
+#        Default:     1
+#
+
+WorldBossScale.MinPlayers = 1
+
+#
+#    WorldBossScale.HealthMod
+#        Description: Extra multiplier on top of (clamped players / designed size) for HP and boss heals.
+#        Default:     1.0
+#
+
+WorldBossScale.HealthMod = 1.0
+
+#
+#    WorldBossScale.DamageMod
+#        Description: Extra multiplier on top of (clamped players / designed size) for outgoing damage.
+#        Default:     1.0
+#
+
+WorldBossScale.DamageMod = 1.0
+
+#
+#    WorldBossScale.ThreatRange
+#        Description: Ignore threat-list players farther than this (yards).
+#        Default:     150
+#
+
+WorldBossScale.ThreatRange = 150
+
+#
+#    WorldBossScale.RecountMs
+#        Description: How often to recount threat-list players while in combat (milliseconds).
+#        Default:     1000
+#
+
+WorldBossScale.RecountMs = 1000
+
+#
+#    WorldBossScale.ExtraEntries
+#        Description: Additional creature entries and designed raid sizes, comma-separated.
+#                     Format: "entry:size, entry:size"
+#                     Example: "12345:25, 67890:40"
+#        Default:     ""
+#
+
+WorldBossScale.ExtraEntries = ""

@@ -1,0 +1,3 @@
+-- WorldBossScale catalog lives in C++ / WorldBossScale.ExtraEntries (no schema).
+-- Classic 40: 6109 Azuregos, 12397 Lord Kazzak, 14887 Ysondre, 14888 Lethon, 14889 Emeriss, 14890 Taerar
+-- TBC 25: 17711 Doomwalker, 18728 Doom Lord Kazzak
