@@ -455,6 +455,12 @@ public:
         if (!creature->IsInCombat())
             return;
 
+        // Taerar (and similar) go unattackable/passive during shade phases.
+        // Rescaling HP off a shrinking threat list mid-mechanic looks like a reset.
+        if (creature->HasUnitFlag(UNIT_FLAG_NON_ATTACKABLE | UNIT_FLAG_NOT_SELECTABLE)
+            || creature->HasReactState(REACT_PASSIVE))
+            return;
+
         info->recountTimer += diff;
         if (info->recountTimer < cfg.recountMs)
             return;
